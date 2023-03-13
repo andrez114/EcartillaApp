@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoPerfil">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_info"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_ide"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_userPerfil"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/txt_nombre"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_userPerfilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textAlignment="center"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_afiliacion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/txt_afiliacion"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afiliacionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:singleLine="true"
+                android:enabled="false"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_uniMed"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/txt_uniMedica"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/uniMedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:singleLine="true"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_consulN"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/txt_consulN"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/consulNnEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:singleLine="true"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_datGen"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_callN"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/txt_callN"
+                app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/callNEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_colLoc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_colLoc"
+                app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/colLocEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_municipio"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_municipio"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/municipioEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_CP"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_CP"
+                app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CPEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_entidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_entFede"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_entFede"
+                app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/entFedeEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lugFec"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_locMuni"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/txt_locMuni"
+                app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/locMuniEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_entFedeN"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_entFede"
+                app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+                app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+                app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/entFedeNEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:focusable="true"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_fecha"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENERO 01 2022"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                style="?android:spinnerStyle"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:onClick="openDatePicker" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_editar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/btn_editar"
+                    app:cornerRadius="@dimen/radius_btn"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_guardar"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/btn_guardar"
+                    app:cornerRadius="@dimen/radius_btn"
+                    android:enabled="false"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

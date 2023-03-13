@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@color/primaryLightColor"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    >
+
+    <ImageView
+        android:id="@+id/nav_header_imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_imagen_perfil"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/nav_header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:text="emailUser" />
+</LinearLayout>

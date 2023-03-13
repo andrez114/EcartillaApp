@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textview_height">25dp</dimen>
+<dimen name="textview_width">150dp</dimen>
+<dimen name="radius_btn">20dp</dimen>
+<dimen name="font_size">16sp</dimen>
+    <dimen name="radious_text_field">20dp</dimen>
+</resources>

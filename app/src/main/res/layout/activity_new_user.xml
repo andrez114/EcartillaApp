@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUserActivity"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+
+        android:text="@string/new_user"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_user"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/hint_user"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_userEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_correoN"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/hint_us"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEditTextN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:singleLine="true"
+                android:inputType="textEmailAddress" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_contasenaN"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:hint="@string/hint_con"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/icono_verde"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditTextN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_con_contasenaN"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:hint="@string/hint_con_con"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/icono_verde"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+            app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusTopStart="@dimen/radious_text_field">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_passwordEditTextN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_fecha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="fecha de nacimiento"
+        app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+        app:boxCornerRadiusBottomStart="@dimen/radious_text_field"
+        app:boxCornerRadiusTopEnd="@dimen/radious_text_field"
+        app:boxCornerRadiusTopStart="@dimen/radious_text_field"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:singleLine="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="5dp"
+
+            android:text="@string/txt_sexo"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:checkedButton="@+id/radio_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/txt_genero_H"
+            android:layout_marginEnd="50dp"
+            app:buttonTint="@color/verde" />
+
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/txt_genero_M"
+                app:buttonTint="@color/verde"/>
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/ic_crear_cuenta"
+            android:text="@string/btn_cancelar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="@dimen/radius_btn"/>
+
+        <Button
+            android:id="@+id/btn_siguiente"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_crear_cuenta"
+            android:text="@string/btn_siguiente"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="@dimen/radius_btn"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

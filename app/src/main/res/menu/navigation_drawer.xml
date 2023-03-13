@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/nav_item_one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_user"
+            android:iconTint="@color/verde"
+            android:title="perfil" />
+    </group>
+
+
+    <item
+        android:id="@+id/subtitle"
+        android:title="herramientas">
+        <menu>
+            <group
+                android:id="@+id/group2"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_configuracion"
+                    android:icon="@drawable/ic_icono_configuracion"
+                    android:title="configuracion" />
+                <item
+                    android:id="@+id/nav_medico"
+                    android:icon="@drawable/ic_icono_medico"
+                    android:title="personal medico" />
+                <item
+                    android:id="@+id/nav_qr"
+                    android:icon="@drawable/ic_icono_qr"
+                    android:title="codigo QR" />
+                <item
+                    android:id="@+id/nav_cerrar"
+                    android:icon="@drawable/ic_icono_salir"
+                    android:title="cerrar sesion" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

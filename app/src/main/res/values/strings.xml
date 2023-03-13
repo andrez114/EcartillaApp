@@ -1,0 +1,81 @@
+<resources>
+    //pantalla login
+    <string name="titulo">E Cartilla Nacional de Salud</string>
+    <string name="hint_con">contraseña</string>
+    <string name="hint_us">Correo electronico</string>
+    <string name="btn_crear">crear cuenta</string>
+    <string name="btn_google">ingresar con google</string>
+    <string name="btn_iniciar">iniciar</string>
+    <string name="btn_olividar_contra"><u>olivide mi contraseña</u></string>
+    <string name="web_client_id">751608857106-o6q16gciodlu45jjmlp0cc86tpnsit71.apps.googleusercontent.com</string>
+
+    //pantalla crear usuario
+    <string name="new_user">crear cuenta</string>
+    <string name="hint_user">nombre</string>
+    <string name="app_name">E Cartilla Nacional de Salud</string>
+    <string name="hint_con_con">confirmar contraseña</string>
+    <string name="btn_cancelar">cancelar</string>
+    <string name="btn_siguiente">siguiente</string>
+    <string name="txt_sexo">sexo</string>
+    <string name="txt_genero_M">mujer</string>
+    <string name="txt_genero_H">hombre</string>
+
+    //pantalla home
+    <string name="btn_cerrar">cerrar sesion</string>
+    <string name="titulo_noticias">Noticias</string>
+
+    //pantalla home
+    <string name="titulo_notificaciones">Notificaciones</string>
+
+    //pantalla recuperar contraseña
+    <string name="txt_rec_contra"><u>Recuperar Contraseña</u></string>
+    <string name="btn_confirmar">confirmar</string>
+    <string name="txt_descripcion_contra">después de hacerlo revise su bandeja de entrada
+    de su correo electronico para cambiar su contraseña</string>
+
+    //menu
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //pantalla perfil
+
+    <string name="txt_ide">IDENTIFICACIÓN</string>
+    <string name="txt_datGen">DATOS GENERALES</string>
+    <string name="txt_GpoSan">grupo sanguíneo</string>
+    <string name="txt_nombre">Apellidos y Nombre</string>
+    <string name="txt_afiliacion">afiliacion/Matricula/Expediente</string>
+    <string name="txt_uniMedica">Unidad Médica</string>
+    <string name="txt_consulN">consultorio No.</string>
+    <string name="txt_edad">Edad</string>
+
+    <string name="txt_dom">Domicilio</string>
+    <string name="txt_callN">calle y número</string>
+    <string name="txt_colLoc">colonia/localidad</string>
+    <string name="txt_municipio">municipio o delegación</string>
+    <string name="txt_CP">Codigo Postal</string>
+    <string name="txt_entFede">entidad federativa</string>
+    <string name="txt_lugFec">lugar y fecha de nacimiento</string>
+    <string name="txt_locMuni">localidad/municipio</string>
+    <string name="txt_fecNac">dia/mes/año</string>
+
+    <string name="btn_editar">Editar</string>
+    <string name="btn_guardar">Guardar</string>
+
+    //dialog new header
+    <string name="hint_Accion">Acción</string>
+    <string name="hint_desc">Descripcion</string>
+    <string name="hint_fecha">fecha</string>
+    <string name="save">Guardar</string>
+    <string name="txt_titulo">Titulo</string>
+    <string name="txt_detalles">Detalles</string>
+    <string name="txt_fecha">Fecha</string>
+    <string name="txt_ciudad">ciudad</string>
+    <string name="txt_estado">Estado</string>
+    <string name="txt_RangoEdad">Rango de Edad</string>
+    <string name="txt_UniMedica">Unidad</string>
+    <string name="btn_foto">subir foto</string>
+
+
+</resources>

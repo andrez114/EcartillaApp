@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RecuperarContra"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        android:text="@string/txt_rec_contra"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_correo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/hint_us"
+            app:boxCornerRadiusBottomEnd="@dimen/radious_text_field"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rec_emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:focusable="true"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_descripcionRecuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        android:text="@string/txt_descripcion_contra"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_rec_cancelar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/ic_crear_cuenta"
+            android:text="@string/btn_cancelar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="@dimen/radius_btn"/>
+
+        <Button
+            android:id="@+id/btn_confirmar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_crear_cuenta"
+            android:text="@string/btn_confirmar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="@dimen/radius_btn" />
+    </LinearLayout>
+
+
+</LinearLayout>
